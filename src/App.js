@@ -1,4 +1,4 @@
-import React,{ useEffect, useState } from "react";
+import React,{ useState } from "react";
 import PokemonThumbnail from "./Components/PokemonThumbnail";
 
 
@@ -20,9 +20,9 @@ function App() {
     createPokemonObject(data.results)
     await console.log(allPokemons)
   }
-  useEffect(()=>{
-    getAllPokemons()
-  },[])
+//   useEffect(()=>{
+//     getAllPokemons()
+//   },[])
 
   return (
     <div className="app-container">
